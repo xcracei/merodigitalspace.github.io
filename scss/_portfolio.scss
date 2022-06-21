@@ -1,0 +1,174 @@
+section.portfolio {
+  background-color: $primary-color;
+  color: white;
+
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3.5rem 0;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-works {
+      flex: 1 1 50rem;
+
+      .work-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .work {
+          width: 22rem;
+          height: 16rem;
+          background-color: white;
+          margin: 2rem 1rem;
+        }
+      }
+    }
+
+    .portfolio-skills {
+      flex: 0 1 40rem;
+
+      h3 {
+        margin-bottom: 4rem;
+      }
+      .progress {
+        display: inline-block;
+        width: 60%;
+        padding: 2px;
+        margin: 0.2rem 0 2.5rem 0;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+        .progress-bar {
+          height: 6px;
+          border-radius: 4px;
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .html-progress {
+          width: 100%;
+          background-color: #86e01e;
+          animation: progress100 5s linear;
+        }
+        .css-progress {
+          width: 100%;
+          background-color: #86e01e;
+          animation: progress100 5s linear;
+        }
+        .bootstrap-progress {
+          width: 75%;
+          background-color: #f2d31b;
+          animation: progress75 5s linear;
+        }
+        .js-progress {
+          width: 25%;
+          background-color: #f27011;
+          animation: progress25 5s linear;
+        }
+        .react-progress {
+          width: 5%;
+          background-color: #f63a0f;
+          animation: progress5 5s linear;
+        }
+        .git-progress {
+          width: 50%;
+          background-color: #f2b01e;
+          animation: progress50 5s linear;
+        }
+      }
+    }
+  }
+}
+
+// animation
+@keyframes progress5 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 5%;
+    background-color: #f63a0f;
+  }
+}
+@keyframes progress25 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 5%;
+    background-color: #f63a0f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f27011;
+  }
+}
+@keyframes progress50 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 5%;
+    background-color: #f63a0f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f27011;
+  }
+  50% {
+    width: 50%;
+    background-color: #f2b01e;
+  }
+}
+@keyframes progress75 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 5%;
+    background-color: #f63a0f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f27011;
+  }
+  50% {
+    width: 50%;
+    background-color: #f2b01e;
+  }
+  75% {
+    width: 75%;
+    background-color: #f2d31b;
+  }
+}
+@keyframes progress100 {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 5%;
+    background-color: #f63a0f;
+  }
+  25% {
+    width: 25%;
+    background-color: #f27011;
+  }
+  50% {
+    width: 50%;
+    background-color: #f2b01e;
+  }
+  75% {
+    width: 75%;
+    background-color: #f2d31b;
+  }
+  100% {
+    width: 100%;
+    background-color: #86e01e;
+  }
+}

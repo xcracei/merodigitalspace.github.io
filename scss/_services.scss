@@ -1,0 +1,89 @@
+section.services {
+  h1 {
+    color: $secondary-color;
+    padding-bottom: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url("../assets/images/wave.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .card {
+      max-width: 300px;
+      min-width: 150px;
+      flex: 1 1 30rem;
+      margin: 3.5rem 0;
+    }
+    .face {
+      height: 200px;
+      transition: 0.4s;
+    }
+  }
+}
+
+.container .card1 .face1 {
+  background: #4aada9;
+}
+.container .card2 .face1 {
+  background: #e07768;
+}
+.container .card3 .face1 {
+  background: #6eadd4;
+}
+
+.container .card .face.face1 {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  img {
+    margin-top: 2rem;
+  }
+}
+.container .card:hover .face.face1 {
+  transform: translateY(0px);
+}
+.container .card .face.face1 .content {
+  transition: 0.5s;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 12px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-100px);
+
+  p {
+    margin: 2rem 0;
+  }
+
+  button {
+    width: 60%;
+    border: none;
+    background-color: $primary-color;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}

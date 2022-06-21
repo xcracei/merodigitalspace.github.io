@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: $text-color;
+  background-color: $bg-color;
+  // background-color: #f4f6ff;
+}
+
+h1 {
+  font-size: $heading1;
+}
+h2 {
+  font-size: $heading2;
+}
+h3 {
+  font-size: $heading3;
+}
+h4 {
+  font-size: $heading4;
+}
+
+h5 {
+  font-size: $heading5;
+}
+h6 {
+  font-size: $heading6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 2px;
+}
+
+p,
+li,
+button,
+a,
+label {
+  font-size: $text;
+}
+
+label {
+  display: inline-block;
+}
+
+a {
+  color: $secondary-color;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+//section headings
+.section-heading {
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 3px;
+  padding: 3.5rem 0;
+}
+
+// special text
+.special-text {
+  color: #66e65b;
+  font-weight: bold;
+}

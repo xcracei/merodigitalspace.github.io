@@ -1,0 +1,52 @@
+header {
+  position: sticky;
+  top: 0px;
+  background-color: $bg-color;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  a {
+    color: $text-color;
+  }
+  nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo {
+      a {
+        font-family: "MuseoModerno", cursive;
+        font-size: 2.8rem;
+
+        .logo-text {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0.8rem 0;
+
+      a {
+        padding: 0.4rem 1rem;
+        margin: 0 0.4rem;
+        &:hover {
+          border-bottom: 0.2px solid $secondary-color;
+        }
+      }
+      a#home {
+        background-color: $secondary-color;
+        color: white;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+}

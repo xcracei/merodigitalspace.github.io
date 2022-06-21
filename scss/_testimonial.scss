@@ -1,0 +1,28 @@
+section.testimonial {
+  h1 {
+    color: $secondary-color;
+  }
+  .testimonial-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem 0;
+    img {
+      height: 12%;
+      width: 12%;
+      border: 0.2rem solid $secondary-color;
+      border-radius: 100%;
+    }
+    p {
+      padding: 2rem;
+    }
+  }
+  .testimonial1 {
+    justify-content: flex-start;
+  }
+  .testimonial2 {
+    justify-content: flex-end;
+  }
+}

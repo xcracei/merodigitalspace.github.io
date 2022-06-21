@@ -1,0 +1,102 @@
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: $primary-color;
+
+  .hero-text-container {
+    flex: 1 1 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin: 7rem 0 2rem 0;
+      text-align: left;
+      font-family: "Comfortaa", cursive;
+      font-size: 5rem;
+      letter-spacing: 8px;
+    }
+
+    p {
+      margin: 2.5rem 4rem;
+      line-height: 2.5;
+      font-size: 2rem;
+    }
+
+    a {
+      letter-spacing: 2px;
+      background-color: rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+      color: white;
+      padding: 1rem 1.5rem;
+      border: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $text-color;
+        font-weight: bold;
+        background-color: $special-color;
+        padding: 1rem 2.2rem;
+      }
+    }
+  }
+  .hero-img-container {
+    flex: 0 1 50rem;
+    object-fit: cover;
+    // .hero-img{
+    //   position: relative;
+    //   z-index: 1;
+    // }
+    // .hero-img-background{
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   opacity: 10%;
+    // }
+  }
+}
+// animation
+#user {
+  animation: user 1s linear infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes user {
+  from {
+    transform: rotateZ(-2deg);
+  }
+  to {
+    transform: rotateZ(2deg);
+  }
+}
+
+#leaf-left {
+  animation: leaf 1.5s ease infinite alternate;
+}
+#leaf-right {
+  animation: leaf 2s ease infinite alternate;
+}
+@keyframes leaf {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+
+#clock-hand {
+  animation: clock 1.5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

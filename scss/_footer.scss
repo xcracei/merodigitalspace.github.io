@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Comfortaa", cursive;
+
+  P {
+    margin: 1rem 0;
+    span.developer {
+      color: $secondary-color;
+    }
+  }
+
+  div.social-icons {
+    margin: 1rem 3rem;
+
+    a {
+      margin: 0 0.8rem;
+    }
+
+    img:hover {
+      border: 2px solid $secondary-color;
+    }
+  }
+}

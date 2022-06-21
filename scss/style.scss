@@ -1,0 +1,156 @@
+// variables
+$heading1: 3.3rem;
+$heading2: 3rem;
+$heading3: 2.7rem;
+$heading4: 2.2rem;
+$heading5: 2rem;
+$heading6: 1.8rem;
+$text: 1.6rem;
+
+// colors
+$bg-color: #e0dede;
+$primary-color: #393e46;
+$secondary-color: #419269;
+$special-color: #6bda7e;
+$text-color: #333333;
+
+// fonts
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-medium";
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "MuseoModerno";
+  src: url("../assets/fonts/MuseoModerno-VariableFont_wght.ttf");
+}
+
+// import
+@import "global";
+@import "header";
+@import "hero";
+@import "services";
+@import "portfolio";
+@import "testimonial";
+@import "about-contact";
+@import "footer";
+
+// media
+
+// // ipad pro
+// @media screen and (max-width:1120px){
+//     .hero-img-background{
+//         visibility: hidden;
+//     }
+// }
+// // ipad tab
+// @media screen and (max-width:720px){
+//     html{
+//         font-size: 50%;
+//     }
+//     .social-icons{
+//         position: absolute;
+//         top: 5rem;
+//         display: inline;
+//         z-index: 3;
+//         img{
+//             width: 6%;
+//             padding: 0.5rem;
+//             margin: 0.75rem;
+//         }
+//     }
+//     section.hero{
+//         display: block;
+
+//         .hero-text-container{
+//             position: relative;
+//             z-index: 2;
+//         }
+//         .hero-img-container{
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             .hero-img {
+//                 width: 90%;
+//                 opacity: 25%;
+//                 object-fit: cover;
+//             }
+//         }
+//     }
+// }
+// // medium screen size phone
+// @media screen and (max-width:530px){
+//     html{
+//         font-size: 40%;
+//     }
+//     .service{
+//         width: 70%;
+//         margin: auto;
+//     }
+// }
+// // pixel 2,2xl iphone 6,7,8plus
+// @media screen and (max-width:415px){
+//     html{
+//         font-size: 35%;
+//     }
+//     .hero-img{
+//         top: 12.5rem;
+//     }
+// }
+// // iphone 5/se,6,7,8,x galaxy s5 moto g4
+// @media screen and (max-width:375px){
+//     .hero-img{
+//         top: 25rem;
+//     }
+//     textarea{
+//         width: 80%;
+//     }
+// }
+
+@media screen and (max-width: 1050px) {
+  // header {
+  //   background: coral;
+  // }
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 58% !important;
+  }
+  // header {
+  //   background-color: darkmagenta;
+  // }
+  .container .face {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  // header {
+  //   background-color: cyan;
+  // }
+  .container .face {
+    width: 200px;
+  }
+  .container .card .face.face1 {
+    transform: none;
+  }
+  .container .card .face.face2 {
+    transform: none;
+  }
+  // footer {
+  //   background-color: $primary-color;
+  //   p {
+  //     span.developer {
+  //       color: $secondary-color;
+  //     }
+  //   }
+  // }
+}
